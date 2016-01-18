@@ -13,6 +13,10 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :account do
+    resources :orders
+  end
+
   # resources :products
   resources :products do
     member do
